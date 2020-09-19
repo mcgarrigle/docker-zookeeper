@@ -1,0 +1,5 @@
+yum install -q -y java
+cd /opt/
+curl http://apache.mirror.anlx.net/zookeeper/zookeeper-3.6.2/apache-zookeeper-3.6.2-bin.tar.gz | tar xvz
+ln -s apache-zookeeper-3.6.2-bin /opt/zookeeperr
+/opt/zookeeper/bin/zkCli.sh -server zoo1:2181,zoo2:2182,zoo3:2183
